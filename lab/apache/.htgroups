@@ -1,9 +1,0 @@
-# Apache groups file
-# Format: groupname: user1 user2 user3
-
-# Admin group - has access to /admin endpoints
-admin: admin alice bob
-
-# Regular users group - no admin access
-users: user1 user2
-

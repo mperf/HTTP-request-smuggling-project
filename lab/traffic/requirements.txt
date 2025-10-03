@@ -1,3 +1,0 @@
-# No external dependencies required for traffic.py
-# If you add packages, list them below, e.g.:
-requests
