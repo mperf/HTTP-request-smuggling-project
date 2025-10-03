@@ -5,9 +5,5 @@ Transfer-Encoding: chunked
 
 0
 
-POST /postComment HTTP/1.1
-Host: localhost:8080
-Content-Type: application/x-www-form-urlencoded
-Content-Length: 90
-
-x=
+GET /admin HTTP/1.1
+x-foo: x
