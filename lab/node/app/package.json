@@ -1,0 +1,14 @@
+{
+  "name": "http-smuggling-backend",
+  "version": "1.0.0",
+  "description": "Backend server for HTTP request smuggling lab",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "author": "mperf",
+  "license": "MIT"
+}

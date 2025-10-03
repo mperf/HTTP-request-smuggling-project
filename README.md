@@ -22,10 +22,10 @@ intro to the vulnerability
 * how to connect and set up the lab
 
 ### Learning Goals
-* Could outline the core consepts that the person doing the lab should learn from it (essentially what we've learned from it)
+* Could outline the core concepts that the person doing the lab should learn from it (essentially what we've learned from it)
 
 ### Troubleshooting Guide
-* Could be usefull
+* Could be useful
 
 ### Assignment
 
@@ -48,4 +48,8 @@ Mattia Perfumo                     <br>
 Fabian Andreasson                  <br>
 Lukas Malmberg                     <br>
 Sarah Winter                       <br>
-As part of the course DD2391 Computer Security 
+
+
+### useful links
+
+https://nathandavison.com/blog/haproxy-http-request-smuggling
