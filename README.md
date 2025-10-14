@@ -45,7 +45,7 @@ In case we want them to give written answers to something
 ### Acknowledgment
 This task was designed by:         <br>
 Mattia Perfumo                     <br>
-Fabian Andreasson                  <br>
+Fabian Andréasson                  <br>
 Lukas Malmberg                     <br>
 Sarah Winter                       <br>
 

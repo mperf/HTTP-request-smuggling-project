@@ -1,0 +1,9 @@
+POST / HTTP/1.1
+Host: localhost:8080
+Content-Length: 1
+Transfer-Encoding: chunked
+
+0
+
+GET /admin HTTP/1.1
+x-foo: x
