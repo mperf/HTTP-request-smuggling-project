@@ -23,7 +23,7 @@ class test(unittest.TestCase):
             # Send request
             sock.sendall(request)
 
-            # Respons
+            # Response
             response = sock.recv(4096)
             
             # Close socket
@@ -51,7 +51,7 @@ class test(unittest.TestCase):
             # Send request
             sock.sendall(request)
 
-            # Respons
+            # Response
             response = sock.recv(4096)
 
             # Close socket

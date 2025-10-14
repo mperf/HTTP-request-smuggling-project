@@ -22,7 +22,7 @@ class test(unittest.TestCase):
         # Send request
         sock.sendall(request)
 
-        # Respons
+        # Response
         response = sock.recv(4096)
 
         print(response.decode('utf-8', errors='ignore')[:300])

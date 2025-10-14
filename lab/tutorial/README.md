@@ -28,7 +28,7 @@ HTTP headers pass additional information with a request/ response message.
 - Response headers: sent by the server (e.g., Server, Location)
 - Entity/ Representation headers: describe the message body (e.g., Content-Type, Content-Length, Content-Encoding)
 
-## Execution the tutorial
+## Execution of the tutorial
 
 Test your request by running `./test.py`. This will also print out the servers response to your request in `solution.txt`. When it comes to HTTP request smuggling, the following could be helpful to think about for a second before starting the tasks;
 - Would the request still work if we removed the trailing `0` at the end?
