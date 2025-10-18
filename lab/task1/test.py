@@ -31,6 +31,10 @@ class test(unittest.TestCase):
 
             self.assertTrue(b"q=smugglingab" in request)
             self.assertTrue(b"q=smuggling\"" in response)
+            print("TASK 1.1 SERVER RESPONSE")
+            print('=' * 60)
+            print(response.decode('utf-8', errors='ignore')[:300])
+            print()
         except Exception as e:
             # print(f"Error: {e}")
             print("TASK 1.1 SERVER RESPONSE")
@@ -60,6 +64,10 @@ class test(unittest.TestCase):
             self.assertTrue(b"Transfer-Encoding: chunked" in request)
             self.assertTrue(b"q=smugglingab" in request)
             self.assertTrue(b"q=smugglingab\"" in response)
+            print("TASK 1.2 SERVER RESPONSE")
+            print('=' * 60)
+            print(response.decode('utf-8', errors='ignore')[:300])
+            print()
         except Exception as e:
             print(f"Error: {e}")
             print("TASK 1.2 SERVER RESPONSE")
