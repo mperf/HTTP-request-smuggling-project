@@ -16,7 +16,8 @@ Our lab addresses how HTTP requests normally work, how they can be exploited thr
 Improvements to the lab could come in the form of prevention tasks. We discussed including tasks that teaches the student how http request smuggling is prevented, but chose to focus on the tasks that teaches the student how to perform the attack.
 
 #### Documentation on testing the project
-All parts of the Lab can be run via each task folder's respective “test.py”. Running them requires the servers to be set up and running in the docked, which is documented in the “README.md” inside the “lab” folder. Notably, docker engine and python3 are necessary to run this lab. TODO: Write down versions and more specifications of what we require beyond the course.
+All parts of the Lab can be run via each task folder's respective “test.py”. Running them requires the servers to be set up and running in the docked, which is documented in the “README.md” inside the “lab” folder. This makes it easier to run the lab, whilst also making it more secure and guaranteeing that the servers will work. Notably, docker (tested for version 28.5.1) and python3 (tested for version 3.11.2) are necessary to run this lab.
+
 Running a “test.py” will test the solutions the user has written, reading them from designated files. Assuming everything is set up correctly; the requests and responses will be printed in the terminal, allowing more insight into what the server sees and what might have gone wrong in the case of a failed test. Similar to how other labs in this course work, successful test cases will be shown as “OK”.
 
 
