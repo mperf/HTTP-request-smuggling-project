@@ -1,52 +1,24 @@
 # HTTP-request-smuggling-project
 
-# HTTP-requests
-Explain how does HTTP work
-* What does a http request look like?
-* what are the headers?
-* “ok this is a simple HTTP request, execute it and tell me the response”
-* basically use curl to access a website
-* maybe create a simple web server that requires some headers to get 200 OK response
-
-
-# HTTP-request-smuggling
-intro to the vulnerability
-* theory
-* how can we manipulate the headers?
-* How can we prevent such attacks?
-* examples
-
-
-### Getting started
-* Along the lines of the first lab; the focus should be to learn the arguments and what happens, be careful with using tools since it can generalize the process too much.
-* how to connect and set up the lab
-
-### Learning Goals
-* Could outline the core concepts that the person doing the lab should learn from it (essentially what we've learned from it)
-
-### Troubleshooting Guide
-* Could be useful
-
-### Assignment
-
-#### Task 1 - contact an unauthenticated page (goes through both server)
-Instructions for task 1
-
-#### Task 2 - contact an authorized page (the first server blocks the request)
-Instructions for task 2
-
-#### Task 3 - develop an attack to bypass the authentication of the first server
-Instructions for task 3
-
-
 #### Report
-In case we want them to give written answers to something
+
 #### Problem Statement
 Modern web applications often rely on multiple servers, such as a front-end proxy and a back-end application server, to handle HTTP traffic efficiently. However, these servers do not always interpret HTTP requests in exactly the same way. Small differences in how they handle headers like Content-Length and Transfer-Encoding can cause them to disagree on where one request ends and the next begins.
 This inconsistency can be exploited by an attacker to smuggle hidden HTTP requests through the connection, a vulnerability known as HTTP Request Smuggling. Because the front-end and back-end see different versions of the same request, the attacker’s hidden payload can bypass security checks, manipulate server behavior, or access data belonging to other users.
 
 #### References 
 We used the PortSwigger Lab as a starting point for our own lab. We studied their exercises to gain a practical understanding of HTTP request smuggling and to analyse example request/response patterns. However, we implemented all infrastructure, scenarios and tasks for this project independently. For learning purposes only, we reproduced key behaviours observed in the PortSwigger material, then designed and developed original lab tasks and solutions.
+
+#### Documentation of project
+The project was developed in a four phase process. The first phase began with the topic and a method. We had decided to create a lab that demonstrates how HTTP-request smuggling works. A solid theoretical foundation was needed for the creation of the lab. The first phase was therefore focused on gathering theory. In the second phase of the project, the structure of the lab was decided. We created a rough plan for the layout, created a github repository and put together theory in a structured document. We also came up with the plan for the infrastructure of the lab. The focus of the third phase of the project was setting up the lab environment. An interface was partially created, but later scrapped for a different infrastructure. We also decided on adding theory questions to the lab. This enabled us to add a lot of necessary background theory, without simply presenting the student solving the lab with a wall of reading material. Finally, the fourth phase focused on finishing touches. Solutions to the theoretical and practical questions were finished.
+
+Our lab addresses how HTTP requests normally work, how they can be exploited through request smuggling and how these exploits can be prevented. The main focus however, is on how request smuggling works. The lab is structured in a way that aims to guide a student with no prior knowledge, through the process of creating an HTTP-request smuggling attack. The lab starts off with a tutorial that explains how HTTP works. The student then moves on to the three tasks. Task 1 covers the basics of how HTTP request smuggling uses headers. Task 2 is an introduction to how HTTP request smuggling can be used maliciously. Task 3 presents different types of HTTP request smuggling and one attack to leak passwords.
+Improvements to the lab could come in the form of prevention tasks. We discussed including tasks that teaches the student how http request smuggling is prevented, but chose to focus on the tasks that teaches the student how to perform the attack.
+
+#### Documentation on testing the project
+All parts of the Lab can be run via each task folder's respective “test.py”. Running them requires the servers to be set up and running in the docked, which is documented in the “README.md” inside the “lab” folder. Notably, docker engine and python3 are necessary to run this lab. TODO: Write down versions and more specifications of what we require beyond the course.
+Running a “test.py” will test the solutions the user has written, reading them from designated files. Assuming everything is set up correctly; the requests and responses will be printed in the terminal, allowing more insight into what the server sees and what might have gone wrong in the case of a failed test. Similar to how other labs in this course work, successful test cases will be shown as “OK”.
+
 
 #### Contributions
 ##### Mattia Perfumo
