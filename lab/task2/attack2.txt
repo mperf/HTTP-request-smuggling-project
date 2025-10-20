@@ -1,9 +1,4 @@
 POST / HTTP/1.1
 Host: localhost:8080
-Content-Length: 10
-Transfer-Encoding: chunked
-
-0
-
-POST /deleteAccount HTTP/1.1
-x-foo: x
+Content-Length:
+Transfer-Encoding:
